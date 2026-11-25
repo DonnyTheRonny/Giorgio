@@ -8,7 +8,7 @@ const T = {
     "hero.lead": "A cosy holiday apartment and a spacious holiday house for couples, families and friends.",
     "hero.cta": "Enquire now", "hero.more": "View accommodation",
     "hl.beach": "~ 300 m to the beach", "hl.ac": "Air conditioning", "hl.wifi": "Free Wi-Fi",
-    "hl.parking": "Parking", "hl.restaurant": "Own restaurant",
+    "hl.parking": "Parking",
     "apt.eyebrow": "Holiday apartment", "apt.title": "The Apartment",
     "apt.text": "Bright, modern apartment with balcony – ideal for couples or small families. The beach, tavernas and shops are within easy walking distance.",
     "apt.f1": "up to 4 guests", "apt.f2": "1 bedroom + sofa bed", "apt.f3": "1 bathroom",
@@ -25,8 +25,6 @@ const T = {
     "price.title": "Prices per night", "price.season": "Season", "price.apt": "Apartment", "price.house": "House",
     "price.low": "May, June, September", "price.high": "July, August",
     "price.note": "Minimum stay 3 nights. Final cleaning, bed linen and towels included.",
-    "rest.eyebrow": "Right next door", "rest.title": "Our Restaurant",
-    "rest.text": "Traditional Greek home cooking, fresh fish and gyros – our guests are warmly welcome.",
     "contact.title": "Contact & Booking",
     "contact.text": "Write to us – we reply quickly, in English, German and Greek."
   },
@@ -38,7 +36,7 @@ const T = {
     "hero.lead": "Ένα ζεστό διαμέρισμα και ένα ευρύχωρο σπίτι για ζευγάρια, οικογένειες και παρέες.",
     "hero.cta": "Κάντε κράτηση", "hero.more": "Δείτε τα καταλύματα",
     "hl.beach": "~ 300 μ. από την παραλία", "hl.ac": "Κλιματισμός", "hl.wifi": "Δωρεάν Wi-Fi",
-    "hl.parking": "Πάρκινγκ", "hl.restaurant": "Δικό μας εστιατόριο",
+    "hl.parking": "Πάρκινγκ",
     "apt.eyebrow": "Διαμέρισμα διακοπών", "apt.title": "Το Διαμέρισμα",
     "apt.text": "Φωτεινό, μοντέρνο διαμέρισμα με μπαλκόνι – ιδανικό για ζευγάρια ή μικρές οικογένειες. Η παραλία, οι ταβέρνες και τα μαγαζιά είναι σε απόσταση αναπνοής.",
     "apt.f1": "έως 4 άτομα", "apt.f2": "1 υπνοδωμάτιο + καναπές-κρεβάτι", "apt.f3": "1 μπάνιο",
@@ -55,8 +53,6 @@ const T = {
     "price.title": "Τιμές ανά βράδυ", "price.season": "Περίοδος", "price.apt": "Διαμέρισμα", "price.house": "Σπίτι",
     "price.low": "Μάιος, Ιούνιος, Σεπτέμβριος", "price.high": "Ιούλιος, Αύγουστος",
     "price.note": "Ελάχιστη διαμονή 3 βράδια. Καθαριότητα, σεντόνια και πετσέτες περιλαμβάνονται.",
-    "rest.eyebrow": "Ακριβώς δίπλα", "rest.title": "Το Εστιατόριό μας",
-    "rest.text": "Παραδοσιακή ελληνική κουζίνα, φρέσκο ψάρι και γύρος – οι επισκέπτες μας είναι πάντα ευπρόσδεκτοι.",
     "contact.title": "Επικοινωνία & Κρατήσεις",
     "contact.text": "Γράψτε μας – απαντάμε γρήγορα, στα ελληνικά, αγγλικά και γερμανικά."
   }

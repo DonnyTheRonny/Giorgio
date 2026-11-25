@@ -11,7 +11,7 @@ Website und A4-Aushang für die Ferienwohnung und das Ferienhaus in Paralia Kate
 | `index.html` | Website (Deutsch-Texte direkt hier) |
 | `js/main.js` | Englische und griechische Übersetzungen, Video-Steuerung, Galerie |
 | `css/style.css` | Design |
-| `assets/img/` | Fotos (`hero.jpg`, `wohnung-1..3.jpg`, `haus-1..3.jpg`, `umgebung-1..2.jpg`, `restaurant.jpg`) und QR-Code |
+| `assets/img/` | Fotos (`hero.jpg`, `wohnung-1..3.jpg`, `haus-1..3.jpg`, `umgebung-1..2.jpg`) und QR-Code |
 | `assets/video/` | Videos `wohnung.mp4`, `haus.mp4` (laufen automatisch, stumm, in Schleife) |
 | `aushang/aushang.html` | A4-Aushang (im Browser öffnen → Drucken) |
 | `aushang/aushang.pdf` | A4-Aushang als druckfertiges PDF |
