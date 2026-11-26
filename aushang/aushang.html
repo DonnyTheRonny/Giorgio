@@ -2,46 +2,46 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
-<title>Aushang A4 – Giorgio's Paralia</title>
+<title>Aushang A3 – Giorgio's Paralia</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  @page { size: A4; margin: 0; }
+  @page { size: A3; margin: 0; }
   * { box-sizing: border-box; }
   html, body { margin: 0; background: #ddd; }
   body { font-family: Inter, system-ui, sans-serif; color: #1d2a33; }
   .page {
-    width: 210mm; height: 297mm; margin: 10mm auto; background: #fff;
+    width: 297mm; height: 420mm; margin: 14.1mm auto; background: #fff;
     display: flex; flex-direction: column; overflow: hidden; position: relative;
   }
   @media print { html, body { background: #fff; } .page { margin: 0; } }
 
-  .hero { position: relative; height: 100mm; }
+  .hero { position: relative; height: 141.4mm; }
   .hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
   .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(7,63,95,.15), rgba(7,63,95,.75)); }
-  .hero-text { position: absolute; left: 14mm; right: 14mm; bottom: 9mm; color: #fff; z-index: 1; }
-  .hero-text .place { font-size: 10pt; letter-spacing: .18em; text-transform: uppercase; color: #ffd591; font-weight: 600; }
-  .hero-text h1 { font-family: "Playfair Display", serif; font-size: 34pt; margin: 2mm 0 1mm; line-height: 1.05; }
-  .hero-text .sub { font-size: 11.5pt; opacity: .95; }
+  .hero-text { position: absolute; left: 19.8mm; right: 19.8mm; bottom: 12.7mm; color: #fff; z-index: 1; }
+  .hero-text .place { font-size: 14.1pt; letter-spacing: .18em; text-transform: uppercase; color: #ffd591; font-weight: 600; }
+  .hero-text h1 { font-family: "Playfair Display", serif; font-size: 48.1pt; margin: 2.8mm 0 1.4mm; line-height: 1.05; }
+  .hero-text .sub { font-size: 16.3pt; opacity: .95; }
 
-  .langs { background: #073f5f; color: #fff; text-align: center; padding: 3mm; font-size: 10.5pt; letter-spacing: .02em; }
-  .langs span { color: #ffd591; margin: 0 2mm; }
+  .langs { background: #073f5f; color: #fff; text-align: center; padding: 4.2mm; font-size: 14.8pt; letter-spacing: .02em; }
+  .langs span { color: #ffd591; margin: 0 2.8mm; }
 
-  .content { padding: 8mm 14mm 0; display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
-  .card img { width: 100%; height: 58mm; object-fit: cover; border-radius: 3mm; display: block; }
-  .card h2 { font-family: "Playfair Display", serif; color: #073f5f; font-size: 17pt; margin: 3mm 0 1.5mm; }
-  .card ul { list-style: none; padding: 0; margin: 0; font-size: 10.5pt; line-height: 1.55; }
+  .content { padding: 11.3mm 19.8mm 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8.5mm; }
+  .card img { width: 100%; height: 82mm; object-fit: cover; border-radius: 4.2mm; display: block; }
+  .card h2 { font-family: "Playfair Display", serif; color: #073f5f; font-size: 24pt; margin: 4.2mm 0 2.1mm; }
+  .card ul { list-style: none; padding: 0; margin: 0; font-size: 14.8pt; line-height: 1.55; }
 
   .bottom {
-    margin-top: auto; display: grid; grid-template-columns: 1fr 58mm; gap: 8mm; align-items: center;
-    padding: 8mm 14mm 10mm; background: #f6efe4;
+    margin-top: auto; display: grid; grid-template-columns: 1fr 82mm; gap: 11.3mm; align-items: center;
+    padding: 11.3mm 19.8mm 14.1mm; background: #f6efe4;
   }
-  .bottom h3 { font-family: "Playfair Display", serif; font-size: 20pt; color: #073f5f; margin: 0 0 2mm; }
-  .bottom p { margin: 0 0 3mm; font-size: 10.5pt; }
-  .contact { font-size: 12pt; font-weight: 600; line-height: 1.7; }
+  .bottom h3 { font-family: "Playfair Display", serif; font-size: 28.3pt; color: #073f5f; margin: 0 0 2.8mm; }
+  .bottom p { margin: 0 0 4.2mm; font-size: 14.8pt; }
+  .contact { font-size: 17pt; font-weight: 600; line-height: 1.7; }
   .qr { text-align: center; }
-  .qr img { width: 52mm; height: 52mm; background: #fff; padding: 2mm; border-radius: 3mm; display: block; margin: 0 auto; }
-  .qr small { display: block; margin-top: 2mm; font-size: 9pt; font-weight: 600; color: #073f5f; }
-  .highlights { display: flex; justify-content: space-between; padding: 6mm 14mm 6mm; font-size: 10pt; font-weight: 600; color: #073f5f; }
+  .qr img { width: 73.5mm; height: 73.5mm; background: #fff; padding: 2.8mm; border-radius: 4.2mm; display: block; margin: 0 auto; }
+  .qr small { display: block; margin-top: 2.8mm; font-size: 12.7pt; font-weight: 600; color: #073f5f; }
+  .highlights { display: flex; justify-content: space-between; padding: 8.5mm 19.8mm 8.5mm; font-size: 14.1pt; font-weight: 600; color: #073f5f; }
 </style>
 </head>
 <body>

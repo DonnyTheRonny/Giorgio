@@ -1,6 +1,6 @@
 # Giorgio's Paralia – Ferienwohnung & Ferienhaus
 
-Website und A4-Aushang für die Ferienwohnung und das Ferienhaus in Paralia Katerinis.
+Website und A3-Aushang für die Ferienwohnung und das Ferienhaus in Paralia Katerinis.
 
 **Aktuell ist das ein Entwurf mit Platzhaltern** (Bilder, Videos, Preise, Kontakt).
 
@@ -13,8 +13,8 @@ Website und A4-Aushang für die Ferienwohnung und das Ferienhaus in Paralia Kate
 | `css/style.css` | Design |
 | `assets/img/` | Fotos (`hero.jpg`, `wohnung-1..3.jpg`, `haus-1..3.jpg`, `umgebung-1..2.jpg`) und QR-Code |
 | `assets/video/` | Videos `wohnung.mp4`, `haus.mp4` (laufen automatisch, stumm, in Schleife) |
-| `aushang/aushang.html` | A4-Aushang (im Browser öffnen → Drucken) |
-| `aushang/aushang.pdf` | A4-Aushang als druckfertiges PDF |
+| `aushang/aushang.html` | A3-Aushang (im Browser öffnen → Drucken) |
+| `aushang/aushang.pdf` | A3-Aushang als druckfertiges PDF |
 
 ## Echte Inhalte einsetzen
 
