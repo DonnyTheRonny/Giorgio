@@ -25,7 +25,7 @@ const T = {
     "price.title": "Prices", "price.req": "on request", "price.cta": "Request a price", "price.season": "Season", "price.apt": "Apartment", "price.house": "House",
     "price.low": "May, June, September", "price.high": "July, August",
     "price.note": "Prices depend on travel dates and number of guests – just ask us and we will be happy to make you an offer.",
-    "contact.title": "Contact & Booking",
+    "contact.title": "Contact & Booking", "contact.host": "Your host:",
     "contact.text": "Write to us – we reply quickly, in English, German and Greek."
   },
   el: {
@@ -53,7 +53,7 @@ const T = {
     "price.title": "Τιμές", "price.req": "κατόπιν επικοινωνίας", "price.cta": "Ζητήστε τιμή", "price.season": "Περίοδος", "price.apt": "Διαμέρισμα", "price.house": "Σπίτι",
     "price.low": "Μάιος, Ιούνιος, Σεπτέμβριος", "price.high": "Ιούλιος, Αύγουστος",
     "price.note": "Οι τιμές εξαρτώνται από την περίοδο και τον αριθμό των ατόμων – ρωτήστε μας και θα σας κάνουμε μια προσφορά.",
-    "contact.title": "Επικοινωνία & Κρατήσεις",
+    "contact.title": "Επικοινωνία & Κρατήσεις", "contact.host": "Ο οικοδεσπότης σας:",
     "contact.text": "Γράψτε μας – απαντάμε γρήγορα, στα ελληνικά, αγγλικά και γερμανικά."
   }
 };

@@ -22,7 +22,7 @@ Website und A3-Aushang für die Ferienwohnung und das Ferienhaus in Paralia Kate
 - **Videos:** `assets/video/wohnung.mp4` / `haus.mp4` ersetzen. Kurz halten (10–30 s) und
   verkleinern, z. B.:
   `ffmpeg -i original.mov -vf scale=1280:-2 -an -c:v libx264 -crf 28 -movflags +faststart wohnung.mp4`
-- **Kontakt:** Telefonnummer in `index.html` (`wa.me/…`, `tel:…`) und im Aushang ändern.
+- **Kontakt:** Giorgio Vaidis, Handy/WhatsApp +49 162 2427136, giorgio.v@gmx.de – steht in `index.html` (`wa.me/…`, `tel:…`) und im Aushang.
 
 ## Online stellen (GitHub Pages, kostenlos)
 
