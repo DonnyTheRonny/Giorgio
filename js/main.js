@@ -15,7 +15,7 @@ const T = {
     "apt.f4": "Fully equipped kitchen", "apt.f5": "Balcony", "apt.f6": "Air conditioning & Wi-Fi",
     "house.eyebrow": "Holiday house", "house.title": "The House",
     "house.text": "Newly built holiday house with pool, a large lawn and a covered terrace with hanging chairs and sun loungers. Modern, air-conditioned – and the beach is just a few steps away.",
-    "house.f1": "up to 8 guests", "house.f2": "3 bedrooms", "house.f3": "2 bathrooms",
+    "house.f1": "up to 6 guests", "house.f2": "2 bedrooms", "house.f3": "Covered terrace",
     "house.f4": "Pool & large garden", "house.f5": "Private parking", "house.f6": "Air conditioning & Wi-Fi",
     "gallery.title": "Gallery",
     "loc.title": "Location",
@@ -25,7 +25,7 @@ const T = {
     "price.title": "Prices", "price.req": "on request", "price.cta": "Request a price", "price.season": "Season", "price.apt": "Apartment", "price.house": "House",
     "price.low": "May, June, September", "price.high": "July, August",
     "price.note": "Prices depend on travel dates and number of guests – just ask us and we will be happy to make you an offer.",
-    "contact.title": "Contact & Booking", "contact.host": "Your host:",
+    "contact.title": "Contact & Booking", "contact.host": "Your host:", "map.note": "To protect your data, the map is only loaded from Google Maps after you click.", "map.btn": "Show map", "map.privacy": "Privacy policy", "foot.imprint": "Legal notice", "foot.privacy": "Privacy",
     "contact.text": "Write to us – we reply quickly, in English, German and Greek."
   },
   el: {
@@ -43,7 +43,7 @@ const T = {
     "apt.f4": "Πλήρως εξοπλισμένη κουζίνα", "apt.f5": "Μπαλκόνι", "apt.f6": "Κλιματισμός & Wi-Fi",
     "house.eyebrow": "Σπίτι διακοπών", "house.title": "Το Σπίτι",
     "house.text": "Καινούργιο σπίτι διακοπών με πισίνα, μεγάλο κήπο με γκαζόν και σκεπαστή βεράντα με κρεμαστές πολυθρόνες και ξαπλώστρες. Μοντέρνο, με κλιματισμό – και η παραλία είναι λίγα βήματα μακριά.",
-    "house.f1": "έως 8 άτομα", "house.f2": "3 υπνοδωμάτια", "house.f3": "2 μπάνια",
+    "house.f1": "έως 6 άτομα", "house.f2": "2 υπνοδωμάτια", "house.f3": "Σκεπαστή βεράντα",
     "house.f4": "Πισίνα & μεγάλος κήπος", "house.f5": "Ιδιωτικό πάρκινγκ", "house.f6": "Κλιματισμός & Wi-Fi",
     "gallery.title": "Φωτογραφίες",
     "loc.title": "Τοποθεσία",
@@ -53,7 +53,7 @@ const T = {
     "price.title": "Τιμές", "price.req": "κατόπιν επικοινωνίας", "price.cta": "Ζητήστε τιμή", "price.season": "Περίοδος", "price.apt": "Διαμέρισμα", "price.house": "Σπίτι",
     "price.low": "Μάιος, Ιούνιος, Σεπτέμβριος", "price.high": "Ιούλιος, Αύγουστος",
     "price.note": "Οι τιμές εξαρτώνται από την περίοδο και τον αριθμό των ατόμων – ρωτήστε μας και θα σας κάνουμε μια προσφορά.",
-    "contact.title": "Επικοινωνία & Κρατήσεις", "contact.host": "Ο οικοδεσπότης σας:",
+    "contact.title": "Επικοινωνία & Κρατήσεις", "contact.host": "Ο οικοδεσπότης σας:", "map.note": "Για την προστασία των δεδομένων σας, ο χάρτης φορτώνεται από το Google Maps μόνο μετά το κλικ σας.", "map.btn": "Εμφάνιση χάρτη", "map.privacy": "Πολιτική απορρήτου", "foot.imprint": "Στοιχεία εταιρείας", "foot.privacy": "Απόρρητο",
     "contact.text": "Γράψτε μας – απαντάμε γρήγορα, στα ελληνικά, αγγλικά και γερμανικά."
   }
 };
@@ -121,5 +121,14 @@ document.querySelectorAll(".gallery img, .thumbs img").forEach(img => {
 });
 lb.addEventListener("click", () => { lb.hidden = true; });
 document.addEventListener("keydown", e => { if (e.key === "Escape") lb.hidden = true; });
+
+// ===== Karte erst nach Klick laden (Datenschutz) =====
+const mapBtn = document.getElementById("mapBtn");
+if (mapBtn) mapBtn.addEventListener("click", () => {
+  const f = document.createElement("iframe");
+  f.className = "map"; f.title = "Karte Paralia";
+  f.src = "https://www.google.com/maps?q=Paralia+Katerinis,+Greece&z=14&output=embed";
+  document.getElementById("map").replaceWith(f);
+});
 
 document.getElementById("year").textContent = new Date().getFullYear();

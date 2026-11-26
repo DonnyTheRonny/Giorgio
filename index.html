@@ -8,9 +8,7 @@
   <meta property="og:title" content="Giorgio's Paralia – Ferienwohnung & Ferienhaus">
   <meta property="og:description" content="Urlaub am Meer in Paralia, Griechenland.">
   <meta property="og:image" content="assets/img/hero.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -99,9 +97,9 @@
     <h2 data-i18n="house.title">Das Haus</h2>
     <p data-i18n="house.text">Neu gebautes Ferienhaus mit Pool, großem Rasengarten und überdachter Terrasse mit Hängesesseln und Sonnenliegen. Modern eingerichtet, klimatisiert – und der Strand ist nur ein paar Schritte entfernt.</p>
     <ul class="facts">
-      <li>👥 <span data-i18n="house.f1">bis 8 Personen</span></li>
-      <li>🛏️ <span data-i18n="house.f2">3 Schlafzimmer</span></li>
-      <li>🚿 <span data-i18n="house.f3">2 Badezimmer</span></li>
+      <li>👥 <span data-i18n="house.f1">bis 6 Personen</span></li>
+      <li>🛏️ <span data-i18n="house.f2">2 Schlafzimmer</span></li>
+      <li>🪑 <span data-i18n="house.f3">Überdachte Terrasse</span></li>
       <li>🏊 <span data-i18n="house.f4">Pool & großer Garten</span></li>
       <li>🚗 <span data-i18n="house.f5">Privater Parkplatz</span></li>
       <li>❄️ <span data-i18n="house.f6">Klimaanlage & WLAN</span></li>
@@ -142,8 +140,12 @@
         <li>⛰️ <span data-i18n="loc.d4">Olymp-Nationalpark: ca. 40 Min.</span></li>
       </ul>
     </div>
-    <iframe class="map" title="Karte Paralia" loading="lazy"
-      src="https://www.google.com/maps?q=Paralia+Katerinis,+Greece&z=14&output=embed"></iframe>
+    <div class="map map-consent" id="map">
+      <p>🗺️</p>
+      <p data-i18n="map.note">Zum Schutz Ihrer Daten wird die Karte erst nach Ihrem Klick von Google Maps geladen.</p>
+      <button class="btn" id="mapBtn" data-i18n="map.btn">Karte anzeigen</button>
+      <a class="map-privacy" href="datenschutz.html" data-i18n="map.privacy">Datenschutzerklärung</a>
+    </div>
   </div>
 </section>
 
@@ -177,6 +179,7 @@
 
 <footer class="footer">
   <p>© <span id="year"></span> Giorgio's Paralia · Paralia Katerinis, Griechenland</p>
+  <p class="footer-links"><a href="impressum.html" data-i18n="foot.imprint">Impressum</a> · <a href="datenschutz.html" data-i18n="foot.privacy">Datenschutz</a></p>
 </footer>
 
 <div class="lightbox" id="lightbox" hidden><img alt=""></div>
