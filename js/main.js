@@ -22,9 +22,9 @@ const T = {
     "loc.text": "Paralia Katerinis lies on the coast of Northern Greece, with views of Mount Olympus. Long sandy beaches, beach bars and tavernas – all close by.",
     "loc.d1": "Beach: approx. 300 m", "loc.d2": "Thessaloniki Airport: approx. 90 km",
     "loc.d3": "Thessaloniki: approx. 1 hour", "loc.d4": "Mount Olympus National Park: approx. 40 min",
-    "price.title": "Prices per night", "price.season": "Season", "price.apt": "Apartment", "price.house": "House",
+    "price.title": "Prices", "price.req": "on request", "price.cta": "Request a price", "price.season": "Season", "price.apt": "Apartment", "price.house": "House",
     "price.low": "May, June, September", "price.high": "July, August",
-    "price.note": "Minimum stay 3 nights. Final cleaning, bed linen and towels included.",
+    "price.note": "Prices depend on travel dates and number of guests – just ask us and we will be happy to make you an offer.",
     "contact.title": "Contact & Booking",
     "contact.text": "Write to us – we reply quickly, in English, German and Greek."
   },
@@ -50,9 +50,9 @@ const T = {
     "loc.text": "Η Παραλία Κατερίνης βρίσκεται στις ακτές της Βόρειας Ελλάδας, με θέα τον Όλυμπο. Μεγάλες αμμουδιές, beach bars και ταβέρνες – όλα κοντά.",
     "loc.d1": "Παραλία: περίπου 300 μ.", "loc.d2": "Αεροδρόμιο Θεσσαλονίκης: περίπου 90 χλμ.",
     "loc.d3": "Θεσσαλονίκη: περίπου 1 ώρα", "loc.d4": "Εθνικός Δρυμός Ολύμπου: περίπου 40 λεπτά",
-    "price.title": "Τιμές ανά βράδυ", "price.season": "Περίοδος", "price.apt": "Διαμέρισμα", "price.house": "Σπίτι",
+    "price.title": "Τιμές", "price.req": "κατόπιν επικοινωνίας", "price.cta": "Ζητήστε τιμή", "price.season": "Περίοδος", "price.apt": "Διαμέρισμα", "price.house": "Σπίτι",
     "price.low": "Μάιος, Ιούνιος, Σεπτέμβριος", "price.high": "Ιούλιος, Αύγουστος",
-    "price.note": "Ελάχιστη διαμονή 3 βράδια. Καθαριότητα, σεντόνια και πετσέτες περιλαμβάνονται.",
+    "price.note": "Οι τιμές εξαρτώνται από την περίοδο και τον αριθμό των ατόμων – ρωτήστε μας και θα σας κάνουμε μια προσφορά.",
     "contact.title": "Επικοινωνία & Κρατήσεις",
     "contact.text": "Γράψτε μας – απαντάμε γρήγορα, στα ελληνικά, αγγλικά και γερμανικά."
   }
