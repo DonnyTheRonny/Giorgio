@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Aushang A3 – Variante 3: Postkarte</title>
+<link rel="stylesheet" href="../css/fonts.css">
+<style>
+  @page { size: A3; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #ddd; }
+  body { font-family: Inter, system-ui, sans-serif; color: #1d2a33; }
+  .page {
+    width: 297mm; height: 420mm; margin: 10mm auto; overflow: hidden; position: relative;
+    background: #f6efe4; display: flex; flex-direction: column;
+    border: 6mm solid #fff; outline: .6mm solid #0b5d8c; outline-offset: -9mm;
+  }
+  @media print { html, body { background: #fff; } .page { margin: 0; } }
+
+  .head { text-align: center; padding: 16mm 16mm 0; }
+  .head .eyebrow { color: #0b5d8c; font-size: 13pt; letter-spacing: .25em; text-transform: uppercase; font-weight: 600; }
+  .head h1 { font-family: "Playfair Display", serif; color: #073f5f; font-size: 62pt; margin: 2mm 0 1mm; line-height: 1; }
+  .head p { margin: 0; font-size: 15pt; color: #5d6b75; }
+
+  .board { position: relative; height: 222mm; margin: 4mm 10mm 0; }
+  .polaroid { position: absolute; background: #fff; padding: 3.5mm 3.5mm 11mm; box-shadow: 0 2mm 5mm rgba(0,0,0,.18); }
+  .polaroid img { display: block; width: 100%; height: calc(100% - 0mm); object-fit: cover; }
+  .polaroid span { position: absolute; left: 0; right: 0; bottom: 2.5mm; text-align: center; font-family: "Playfair Display", serif; font-size: 14pt; color: #073f5f; }
+  .p1 { left: 4mm;  top: 6mm;   width: 122mm; height: 106mm; transform: rotate(-5deg); }
+  .p2 { left: 128mm; top: 0;    width: 134mm; height: 110mm; transform: rotate(3deg); }
+  .p3 { left: 0;    top: 114mm; width: 94mm;  height: 100mm;  transform: rotate(4deg); z-index: 2; }
+  .p4 { left: 88mm; top: 108mm; width: 94mm;  height: 104mm;  transform: rotate(-3deg); z-index: 3; }
+  .p5 { left: 176mm; top: 114mm; width: 90mm; height: 100mm;  transform: rotate(5deg); z-index: 2; }
+
+  .text { display: grid; grid-template-columns: 1fr 1fr; gap: 10mm; padding: 4mm 22mm 0; }
+  .text h2 { font-family: "Playfair Display", serif; color: #073f5f; font-size: 20pt; margin: 0 0 1.5mm; }
+  .text ul { list-style: none; padding: 0; margin: 0; font-size: 14pt; line-height: 1.6; }
+
+  .bottom { margin-top: auto; display: grid; grid-template-columns: 1fr 64mm; gap: 8mm; align-items: center; padding: 0 22mm 18mm; }
+  .bottom h3 { font-family: "Playfair Display", serif; color: #b5651d; font-size: 26pt; margin: 0 0 2mm; }
+  .bottom p { margin: 0 0 3mm; font-size: 12.5pt; color: #3d4a54; }
+  .contact { font-size: 16pt; font-weight: 600; line-height: 1.65; color: #073f5f; }
+  .stamp { background: #fff; padding: 4mm; border: 1.2mm dashed #0b5d8c; transform: rotate(3deg); text-align: center; }
+  .stamp img { width: 100%; display: block; }
+  .stamp small { display: block; margin-top: 2mm; font-size: 10.5pt; font-weight: 600; color: #0b5d8c; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="head">
+    <div class="eyebrow">Paralia Katerinis · Griechenland</div>
+    <h1>Grüße aus Paralia!</h1>
+    <p>Ferienhaus &amp; Ferienwohnung von Giorgio – Ihrem Gastgeber vom Orfeo Greco</p>
+  </div>
+
+  <div class="board">
+    <div class="polaroid p1"><img src="../assets/img/haus-1.jpg" alt=""><span>Unser Ferienhaus</span></div>
+    <div class="polaroid p2"><img src="../assets/img/wohnung-1.jpg" alt=""><span>Abends auf der Terrasse</span></div>
+    <div class="polaroid p3"><img src="../assets/img/haus-3.jpg" alt=""><span>Hängesessel</span></div>
+    <div class="polaroid p4"><img src="../assets/img/wohnung-10.jpg" alt=""><span>Abkühlung im Pool</span></div>
+    <div class="polaroid p5"><img src="../assets/img/wohnung-9.jpg" alt=""><span>Ab an den Strand</span></div>
+  </div>
+
+  <div class="text">
+    <div>
+      <h2>Das Haus</h2>
+      <ul>
+        <li>👥 bis 6 Personen · 2 Schlafzimmer</li>
+        <li>🏊 Pool &amp; großer Garten</li>
+        <li>💶 Preis auf Anfrage</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Die Wohnung</h2>
+      <ul>
+        <li>🛏️ 1 Schlafzimmer + Schlafsofa</li>
+        <li>🏊 Terrasse mit Pool</li>
+        <li>💶 Preis auf Anfrage</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div>
+      <h3>Jetzt anfragen!</h3>
+      <p>Sprechen Sie Giorgio gerne direkt hier im Restaurant an oder melden Sie sich:</p>
+      <div class="contact">📱 0162 242 71 36 <span style="font-weight:400">(Anruf &amp; WhatsApp)</span><br>✉️ giorgio.v@gmx.de</div>
+    </div>
+    <div class="stamp">
+      <img src="../assets/img/qr.svg" alt="QR-Code">
+      <small>Scannen für Fotos &amp; Videos</small>
+    </div>
+  </div>
+</div>
+</body>
+</html>

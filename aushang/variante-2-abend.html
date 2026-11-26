@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Aushang A3 – Variante 2: Abendstimmung</title>
+<link rel="stylesheet" href="../css/fonts.css">
+<style>
+  @page { size: A3; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #ddd; }
+  body { font-family: Inter, system-ui, sans-serif; }
+  .page { width: 297mm; height: 420mm; margin: 10mm auto; background: #0b2233; color: #fff; display: flex; flex-direction: column; overflow: hidden; }
+  @media print { html, body { background: #fff; } .page { margin: 0; } }
+
+  .hero { position: relative; height: 175mm; }
+  .hero img { width: 100%; height: 100%; object-fit: cover; object-position: center 60%; display: block; }
+  .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,34,51,0) 45%, rgba(11,34,51,1) 100%); }
+  .hero-text { position: absolute; left: 16mm; right: 16mm; bottom: 4mm; z-index: 1; }
+  .eyebrow { color: #f2b45a; font-size: 13pt; letter-spacing: .22em; text-transform: uppercase; font-weight: 600; }
+  h1 { font-family: "Playfair Display", serif; font-size: 58pt; line-height: 1; margin: 3mm 0 2mm; }
+  .sub { font-size: 16pt; color: #d7e2ea; }
+
+  .strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; padding: 6mm 16mm 0; }
+  .strip img { width: 100%; height: 60mm; object-fit: cover; border-radius: 2.5mm; display: block; }
+
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; padding: 7mm 16mm 0; }
+  .card { background: rgba(255,255,255,.06); border: .4mm solid rgba(242,180,90,.45); border-radius: 4mm; padding: 6mm 7mm; }
+  .card h2 { font-family: "Playfair Display", serif; font-size: 22pt; margin: 0 0 2mm; color: #f2b45a; }
+  .card ul { list-style: none; padding: 0; margin: 0; font-size: 14.5pt; line-height: 1.7; color: #e6eef3; }
+
+  .bottom { margin-top: auto; display: grid; grid-template-columns: 1fr 70mm; gap: 10mm; align-items: center; padding: 0 16mm 14mm; }
+  .bottom h3 { font-family: "Playfair Display", serif; font-size: 30pt; margin: 0 0 3mm; }
+  .bottom p { margin: 0 0 5mm; font-size: 13pt; color: #c3d1db; }
+  .contact { font-size: 18pt; font-weight: 600; line-height: 1.7; }
+  .contact .host { color: #f2b45a; font-size: 13pt; font-weight: 500; display: block; margin-top: 2mm; }
+  .qr { text-align: center; }
+  .qr img { width: 66mm; height: 66mm; background: #fff; padding: 3mm; border-radius: 4mm; display: block; }
+  .qr small { display: block; margin-top: 3mm; font-size: 11.5pt; font-weight: 600; color: #f2b45a; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="hero">
+    <img src="../assets/img/wohnung-1.jpg" alt="">
+    <div class="hero-text">
+      <div class="eyebrow">Paralia Katerinis · Griechenland</div>
+      <h1>Ihr Sommer<br>in Paralia</h1>
+      <div class="sub">Ferienhaus &amp; Ferienwohnung mit Pool – nah am Strand</div>
+    </div>
+  </div>
+
+  <div class="strip">
+    <img src="../assets/img/haus-1.jpg" alt="">
+    <img src="../assets/img/haus-3.jpg" alt="">
+    <img src="../assets/img/wohnung-10.jpg" alt="">
+    <img src="../assets/img/wohnung-7.jpg" alt="">
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <h2>Das Haus</h2>
+      <ul>
+        <li>bis 6 Personen · 2 Schlafzimmer</li>
+        <li>Pool &amp; großer Rasengarten</li>
+        <li>Überdachte Terrasse, Hängesessel</li>
+        <li>Preis auf Anfrage</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Die Wohnung</h2>
+      <ul>
+        <li>1 Schlafzimmer + Schlafsofa</li>
+        <li>Terrasse mit Pool &amp; Sonnenliegen</li>
+        <li>Ferienanlage mit Beach-Bar</li>
+        <li>Preis auf Anfrage</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div>
+      <h3>Lust auf Griechenland?</h3>
+      <p>Sprechen Sie Giorgio gerne direkt hier im Restaurant an oder melden Sie sich:</p>
+      <div class="contact">📱 0162 242 71 36 <span style="font-weight:400">(Anruf &amp; WhatsApp)</span><br>✉️ giorgio.v@gmx.de
+        <span class="host">Ihr Gastgeber: Giorgio vom Orfeo Greco</span></div>
+    </div>
+    <div class="qr">
+      <img src="../assets/img/qr.svg" alt="QR-Code">
+      <small>Scannen: Fotos, Videos &amp; Preise</small>
+    </div>
+  </div>
+</div>
+</body>
+</html>
