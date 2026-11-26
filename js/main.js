@@ -106,6 +106,7 @@ videos.forEach(v => { v.muted = true; io.observe(v); });
 document.querySelectorAll(".sound").forEach(btn => {
   btn.addEventListener("click", () => {
     const v = btn.parentElement.querySelector("video");
+    v.volume = 0.5;
     v.muted = !v.muted;
     btn.textContent = v.muted ? "🔇" : "🔊";
     if (!v.muted) v.play();

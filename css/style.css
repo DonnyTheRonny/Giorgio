@@ -88,6 +88,7 @@ a { color: inherit; }
 .stay.reverse .stay-media { order: 2; }
 .stay-media { position: relative; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
 .stay-media video { width: 100%; aspect-ratio: 16/10; object-fit: cover; }
+.sound.hero-sound { z-index: 2; right: 1.5rem; bottom: 1.5rem; }
 .sound {
   position: absolute; right: 1rem; bottom: 1rem; border: 0; border-radius: 50%;
   width: 44px; height: 44px; font-size: 1.2rem; cursor: pointer;
